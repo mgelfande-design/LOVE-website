@@ -1,94 +1,66 @@
+/* Body & overall style */
 body {
-  font-family: 'Montserrat', sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #fff8f0;
-  color: #333;
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #4B3832;
+    background-color: #FFF8F2;
+    padding: 30px;
+    margin: 0;
 }
 
-header {
-  background: #ff6b6b;
-  color: white;
-  padding: 1rem;
-  text-align: center;
+/* Headings */
+h1, h2, h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 900;
+    font-style: italic;
+    color: #3B0A16;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
 }
 
-header h1 {
-  font-size: 1.5rem;
+/* Highlighted / romantic accents */
+.highlight, em {
+    font-family: 'Great Vibes', cursive;
+    color: #D48C7A;
 }
 
-.crossed {
-  text-decoration: line-through;
+/* Links */
+a {
+    color: #D48C7A;
+    text-decoration: none;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  padding: 0;
-}
-
-nav ul li {
-  margin: 0 1rem;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.section {
-  padding: 2rem;
-  text-align: center;
-}
-
-.season-filters button {
-  margin: 0.5rem;
-  padding: 0.5rem 1rem;
-  background: #ff9f43;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  color: white;
-  font-weight: bold;
-}
-
-textarea {
-  width: 80%;
-  height: 80px;
-  margin-top: 1rem;
-  padding: 0.5rem;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-button {
-  margin-top: 1rem;
-  padding: 0.7rem 1.5rem;
-  background: #ff6b6b;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-}
-
+/* Lists */
 ul {
-  padding: 0;
-  list-style: none;
+    list-style-type: none;
+    padding: 0;
 }
 
-ul li {
-  margin: 0.5rem 0;
-  padding: 0.5rem;
-  background: #ffe3e0;
-  border-radius: 5px;
+li {
+    margin-bottom: 15px;
 }
 
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #ff6b6b;
-  color: white;
+/* Buttons */
+button {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 12px 25px;
+    color: #FFF8F2;
+    background-color: #3B0A16;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #D48C7A;
+    color: #3B0A16;
+}
+
+/* Sections spacing */
+section {
+    margin-top: 40px;
 }
