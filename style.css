@@ -1,66 +1,78 @@
-/* Body & overall style */
+/* GLOBAL STYLES */
 body {
-    font-family: 'Lora', serif;
-    font-size: 18px;
-    line-height: 1.8;
-    color: #4B3832;
-    background-color: #FFF8F2;
-    padding: 30px;
     margin: 0;
-}
-
-/* Headings */
-h1, h2, h3 {
     font-family: 'Cormorant Garamond', serif;
-    font-weight: 900;
-    font-style: italic;
-    color: #3B0A16;
+    background-color: #6B1E3B; /* burgundy background */
+    color: #FFF8F2; /* candlelight cream text */
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 2.5em;
     margin-bottom: 20px;
-    letter-spacing: 1px;
 }
 
-/* Highlighted / romantic accents */
-.highlight, em {
-    font-family: 'Great Vibes', cursive;
-    color: #D48C7A;
+p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 40px;
 }
 
-/* Links */
-a {
-    color: #D48C7A;
-    text-decoration: none;
+/* NAVBAR */
+.navbar {
+    background-color: #4B3832; /* deep brown/navy accent for navbar */
+    padding: 15px 50px;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-/* Lists */
-ul {
-    list-style-type: none;
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
     padding: 0;
 }
 
-li {
-    margin-bottom: 15px;
-}
-
-/* Buttons */
-button {
-    font-family: 'Cormorant Garamond', serif;
+.nav-links li a {
+    text-decoration: none;
     font-weight: 700;
     font-size: 18px;
-    padding: 12px 25px;
     color: #FFF8F2;
-    background-color: #3B0A16;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
 }
 
-button:hover {
-    background-color: #D48C7A;
-    color: #3B0A16;
+.nav-links li a:hover {
+    color: #D48C7A; /* blush accent on hover */
 }
 
-/* Sections spacing */
+.nav-links li a.highlighted {
+    background-color: #D48C7A; /* blush highlight */
+    color: #4B3832;
+    border-radius: 6px;
+}
+
+.nav-links li a.heart {
+    font-size: 22px;
+    padding: 0;
+}
+
+/* SECTIONS */
 section {
-    margin-top: 40px;
+    padding: 100px 50px;
+    text-align: center;
+}
+
+main section:nth-child(even) {
+    background-color: rgba(255,248,242,0.05); /* subtle difference for even sections */
+}
+
+/* SMOOTH SCROLL */
+html {
+    scroll-behavior: smooth;
 }
